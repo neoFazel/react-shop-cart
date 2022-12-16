@@ -1,0 +1,50 @@
+.nav{
+    background: #1a1717;
+    width: 100%;
+    color: #fff;
+    padding: 2rem;
+}
+.nav section{
+    width: 90vw;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 800px;
+}
+.nav section div:nth-child(1){
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    background: #fff;
+    padding: 0.4rem;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.nav section div:nth-child(1) p span{
+    font-size: 1.5rem;
+    background: red;
+    padding: 0.050rem;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0.1rem;
+}
+.nav section div:nth-child(1) p{
+    color: #000;
+}
+.nav section div:nth-child(2) {
+    font-size: 2rem;
+    padding: 0.5rem  1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid#393E46;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+}
+.nav section div:nth-child(2):hover{
+    background: #fff;
+    color: red;
+    transition: all 0.5s ease;
+}

@@ -1,0 +1,110 @@
+.empty-cart{
+    text-align: center;
+    margin-top: 5rem;
+}
+.empty-cart div{
+    font-size: 1.5rem;
+}
+.cart-icon{
+    font-size: 20rem;
+    padding: 2rem 0;
+    color: rgb(249, 54, 54);
+}
+.empty-cart button {
+    background: rgb(29, 29, 29);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: bold; 
+    cursor: pointer;
+    outline: none;
+}
+
+.cart-items__container{
+    margin: 2rem 0;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+}
+.cart-item{
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.quantity-btns span{
+    font-size: 3rem;
+    padding: 0 1rem;
+}
+.item-desc{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+.quantity-btns button{
+    border: none;
+    background: transparent;
+    border-radius: 5px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.item-price{
+    font-size: 2rem;
+}
+.remove-btn{
+    background-color: rgb(205, 76, 76);
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    margin: 1rem 0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.total{
+    background: rgb(222, 222, 222);
+    border-top: 2px dotted #000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    font-size: 2rem;
+    position: absolute;
+    position: fixed;
+    text-align: center;
+}
+.total div{
+    justify-content: center;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+.total div div{
+    display: block;
+}
+.total button{
+    font-size: 2rem;
+    background-color: rgb(33, 156, 33);
+    color: #fff;
+    padding: 0.3rem 0.7rem;
+    cursor: no-drop;
+    border: none;
+}
+
+@media screen and (min-width:600px) {
+    .cart-items__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-width:900px) {
+    .cart-items__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+}

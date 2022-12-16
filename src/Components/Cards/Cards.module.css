@@ -1,0 +1,80 @@
+.item-card{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border-radius: 4px;
+}
+
+.item-card img{
+    width: 125px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.item-card div{
+    text-align: right;
+    padding: 2rem 0.5rem  1rem;
+    font-weight: 800;
+    /* font-size: 1.2rem; */
+    gap: 1rem;
+}
+.desc-list{
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.4rem;
+
+}
+.desc-list li span{
+    font-size: 1rem;
+}
+.btn{
+    font-size: 1.3rem;
+    background: rgb(223, 63, 63);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    float: left;
+    margin-left: 1rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width:475px) {
+    .item-card{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+        padding: 1rem;
+        border: none;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid black;
+    }
+    .item-card img{
+        margin: auto;
+    }
+    .item-card div{
+        text-align: center;
+        padding: 2rem 0.5rem  1rem;
+        font-weight: 800;
+        /* font-size: 1.2rem; */
+        gap: 1rem;
+    }
+    .btn{
+        float: none;
+    }
+    .item-card img{
+        width: 175px;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:600px){
+    .item-card{
+        border: 1px solid black;
+        gap: 0;
+    }
+}
